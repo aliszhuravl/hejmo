@@ -1,0 +1,131 @@
+.accordion {
+  width: 100%;
+  border-bottom: none;
+  background-color: #fff;
+}
+
+.accordion__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  padding: 0 32px;
+  background-color: transparent;
+  font-family: $font-family_bold;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  transition: all .15s;
+  will-change: background-color;
+  cursor: default;
+
+  &:before { /* vertical element */
+    content: '';
+    display: block;
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    will-change: transform, width;
+    transition: all .15s;
+    width: 1px;
+    height: 18px;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  &:after { /* horizontal element */
+    content: '';
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    will-change: transform;
+    transition: all .15s;
+    width: 18px;
+    height: 1px;
+    background-color: #333;
+  }
+}
+
+.accordion__item_open {
+
+  & .accordion__btn {
+    background-color: transparent;
+    border-bottom-color: transparent;
+
+    &:before {
+      height: 2px;
+    }
+  }
+
+  & .accordion__content {
+    display: block;
+  }
+}
+
+.accordion__content {
+  display: none;
+  padding: 10px 0 30px 40px;
+  background-color: transparent;
+  will-change: height;
+  .ico_box {
+    margin-bottom: 12px;
+    display: flex;
+    .ico {
+      img {
+        display: block;
+        margin-right: 8px;
+        width: 14px;
+      }
+    }
+    .text {
+      p, a {
+        font-family: $font-family;
+        font-size: 14px;
+        color: #3d3d3d;
+      }
+    }
+  }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+        li {
+          margin-bottom: 12px;
+        }
+    }
+   p {
+     margin-bottom: 13px;
+     font-size: 16px;
+   }
+}
+
+.accordion__text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: normal;
+  left: 40px;
+  position: absolute;
+}
+
+.acc_text {
+  max-width: 80%;
+    ol {
+      li {
+        margin-bottom: 8px;
+      }
+    }
+}

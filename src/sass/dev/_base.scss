@@ -1,0 +1,83 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: $color-white;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: $font-normal 18px/1.5 $font-family;
+  font-weight: normal;
+  font-style: normal;
+  color: $color-black;
+}
+
+a {
+  transition: color, .2s;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 80px;
+  font-family: $font-family_book;
+  line-height: 109px;
+  text-transform: lowercase;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: normal;
+  font-family: $font-family_bold;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.main_text {
+  font-size: 22px;
+  opacity: 0.7;
+}
+
+.mb_16 {
+  margin-bottom: 16px;
+}
+
+.mb_20 {
+  margin-bottom: 20px;
+}
+
+.mb_32 {
+  margin-bottom: 32px;
+}
+
+.mb_40 {
+  margin-bottom: 40px;
+}
+
+.mb_60 {
+  margin-bottom: 60px;
+}
+
+.mt_0 {
+  margin-top: 0;
+}
+
+.bold {
+  font-family: $font-family_bold;
+  opacity: 1;
+}

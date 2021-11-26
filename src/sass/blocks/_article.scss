@@ -1,0 +1,111 @@
+.article {
+  max-width: 980px;
+  margin-left: 120px;
+
+    &_body {
+      margin-left: 120px;
+    }
+
+  h2 {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 20px;
+    text-transform: none;
+  }
+
+  h3 {
+    font-family:  $font-family_book;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    text-transform: none;
+  }
+  img {
+    margin: 25px 0;
+  }
+  p {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 150%;
+    color: rgba(61, 61, 61, 0.7);
+    letter-spacing: 0.02em;
+  }
+  ul {
+    margin-bottom: 20px;
+    padding-left: 25px;
+    list-style-type: none;
+    margin-top: 40px;
+    li {
+      margin-bottom: 12px;
+      position: relative;
+      font-family: $font-family_bold;
+      &:before {
+        width: 6px;
+        height: 6px;
+        background-color: #D66D2A;
+        content: '';
+        margin: 0 16px 0 0;
+        position: absolute;
+        left: -25px;
+        top: 6px;
+      }
+    }
+  }
+  .article_img {
+    width: 100%;
+    height: 250px;
+    margin-top: 0;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1199px) {
+  .article {
+    margin-left: 0;
+    h2 {
+      font-size: 36px !important;
+      margin-bottom: 20px !important;
+      font-family: $font-family_bold;
+    }
+    h3 {
+      font-family: $font-family_bold;
+    }
+  }
+  .article_body {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  h2.long_title {
+    font-size: 30px;
+    line-height: 36px;
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 20px;
+  }
+  .article {
+    h2 {
+      font-size: 24px !important;
+      margin-bottom: 20px !important;
+      font-family: $font-family_bold;
+      line-height: 28px;
+    }
+    h3 {
+      font-family: $font-family_bold;
+      margin-top: 12px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    ul li {
+      font-size: 18px;
+    }
+    .article_img {
+      margin-bottom: 12px;
+    }
+  }
+}

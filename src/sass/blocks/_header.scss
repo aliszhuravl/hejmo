@@ -1,0 +1,23 @@
+.header {
+  background-color: transparent;
+  width: 100%;
+  min-width: 1240px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header__inner {
+  border-bottom: 1px solid #ededed;
+  margin: 0 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+    &_left {
+      display: block;
+        img {
+          display: block;
+        }
+    }
+}
