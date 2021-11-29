@@ -287,4 +287,18 @@
     }
 }
 
+.info_shipping {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+    img {
+      margin-right: 16px;
+      display: block;
+      margin-top: 4px;
+    }
+}
 
+.item_description {
+  opacity: 1;
+  font-family: $font-family_book;
+}

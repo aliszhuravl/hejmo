@@ -1603,6 +1603,23 @@ h3 {
 	margin-top: 4px;
 }
 
+.info_shipping {
+	display: flex;
+	width: 100%;
+	align-items: flex-start;
+}
+
+.info_shipping img {
+	display: block;
+	margin-top: 4px;
+	margin-right: 16px;
+}
+
+.item_description {
+	font-family: 'Avenir-Book', 'Arial', serif;
+	opacity: 1;
+}
+
 /* Slider */
 
 .slick-slider {
@@ -2135,9 +2152,9 @@ h3 {
 .item__container {
 	display: flex;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	margin-bottom: 60px;
-	align-items: flex-start;
+	align-items: stretch;
 	justify-content: flex-start;
 }
 
@@ -2174,7 +2191,8 @@ h3 {
 }
 
 .item__container_right {
-	width: 100% !important;
+	display: block;
+	width: 50% !important;
 	height: auto;
 	margin: 60px 0 0 0;
 }
@@ -2207,11 +2225,6 @@ h3 {
 .checkbox_cantainer {
 	display: flex;
 	width: 100%;
-}
-
-.wrapper-sticky {
-	width: 50% !important;
-	margin: 0 !important;
 }
 
 .sold_out {
@@ -2429,6 +2442,10 @@ h3 {
 
 .btn_act .btn_transparent:before {
 	height: 2px;
+}
+
+.rail {
+	width: 100%;
 }
 
 .info_tile {
@@ -3576,6 +3593,10 @@ h3 {
 
 .page_maintitle {
 	margin-bottom: 0;
+}
+
+.item__container_right {
+	display: none;
 }
 
 .rail,
