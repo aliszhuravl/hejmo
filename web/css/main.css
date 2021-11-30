@@ -1274,6 +1274,14 @@ h3 {
 	content: '3-Saison';
 }
 
+.button_item .montag .form__checkbox_indicator:after {
+	content: 'Montag';
+}
+
+.button_item .freitag .form__checkbox_indicator:after {
+	content: 'Freitag';
+}
+
 .button_item .form__checkbox > input:checked ~ .form__checkbox_indicator {
 	-webkit-transform: none;
 	transform: none;
@@ -2446,6 +2454,12 @@ h3 {
 
 .rail {
 	width: 100%;
+}
+
+.menge {
+	width: -webkit-min-content;
+	width: -moz-min-content;
+	width: min-content;
 }
 
 .info_tile {

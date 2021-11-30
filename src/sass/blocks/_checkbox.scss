@@ -156,6 +156,22 @@
     }
   }
 
+  .montag {
+    .form__checkbox_indicator {
+      &:after {
+        content: 'Montag';
+      }
+    }
+  }
+
+  .freitag {
+    .form__checkbox_indicator {
+      &:after {
+        content: 'Freitag';
+      }
+    }
+  }
+
   .form__checkbox > input:checked ~ .form__checkbox_indicator {
     background: transparent;
     border-color: #000;
