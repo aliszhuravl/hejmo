@@ -1414,50 +1414,50 @@ h3 {
 
 .gallery_item:nth-child(1) {
 	grid-column-start: 1;
-	grid-column-end: 7;
+	grid-column-end: 6;
 	grid-row-start: 1;
 }
 
 .gallery_item:nth-child(2) {
-	margin-top: 80px;
+	margin-top: 160px;
 	grid-row-start: 1;
-	grid-column-start: 8;
+	grid-column-start: 7;
 	grid-column-end: 13;
 }
 
 .gallery_item:nth-child(3) {
-	margin-top: -80px;
+	margin-top: -160px;
 	grid-row-start: 2;
-	grid-column-start: 2;
-	grid-column-end: 7;
+	grid-column-start: 1;
+	grid-column-end: 6;
 }
 
 .gallery_item:nth-child(4) {
-	margin-top: -160px;
-	grid-row-start: 3;
-	grid-column-start: 8;
-	grid-column-end: 13;
+	margin-top: 160px;
+	grid-row-start: 2;
+	grid-column-start: 7;
+	grid-column-end: 12;
 }
 
 .gallery_item:nth-child(5) {
-	margin-top: -80px;
+	margin-top: -160px;
 	grid-row-start: 4;
 	grid-column-start: 1;
-	grid-column-end: 7;
+	grid-column-end: 6;
 }
 
 .gallery_item:nth-child(6) {
-	margin-top: -160px;
-	grid-row-start: 5;
-	grid-column-start: 8;
+	margin-top: 160px;
+	grid-row-start: 4;
+	grid-column-start: 7;
 	grid-column-end: 13;
 }
 
 .gallery_item:nth-child(7) {
-	margin-top: 160px;
+	margin-top: -160px;
 	grid-row-start: 5;
-	grid-column-start: 2;
-	grid-column-end: 7;
+	grid-column-start: 1;
+	grid-column-end: 6;
 }
 
 .item_price {
@@ -3586,7 +3586,7 @@ h3 {
 }
 
 .gallery_item__inner__img {
-	height: 420px;
+	height: 600px;
 }
 
 .gallery_item__inner__img img {
@@ -4130,6 +4130,10 @@ h3 {
 
 .page_maintitle h2 {
 	font-size: 48px;
+}
+
+.gallery_item__inner__img {
+	height: 400px;
 }
 
 .main_link {

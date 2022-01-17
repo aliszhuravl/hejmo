@@ -200,7 +200,7 @@
 
         &__inner {
           &__img {
-            height: 420px;
+            height: 600px;
             img {
               display: block;
               width: 100%;
@@ -446,5 +446,8 @@
       h2 {
         font-size: 48px;
       }
+  }
+  .gallery_item__inner__img {
+    height: 400px;
   }
 }
