@@ -1376,18 +1376,41 @@ h3 {
 }
 
 .gallery {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
-	grid-template-columns: repeat(12, 1fr);
-	-webkit-column-gap: 32px;
-	column-gap: 32px;
+}
+
+.gallery_row {
+	display: flex;
+	width: 100%;
+	margin-bottom: 80px;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+.gallery_row .gallery_item {
+	width: calc(60% - 160px);
+}
+
+.gallery_row .gallery_item:first-child {
+	align-self: flex-end;
+}
+
+.gallery_row .small {
+	width: 40%;
+}
+
+.gallery_row .package {
+	margin-top: -160px;
+}
+
+.gallery .starting_row {
+	margin-top: -80px;
 }
 
 .gallery_item {
 	opacity: 0;
-	grid-column-start: 1;
-	grid-column-end: 7;
-	grid-row-start: 1;
 }
 
 .gallery_item__inner {
@@ -1410,54 +1433,6 @@ h3 {
 .gallery_item__inner__img:hover .gallery_pic {
 	visibility: visible;
 	opacity: 1;
-}
-
-.gallery_item:nth-child(1) {
-	grid-column-start: 1;
-	grid-column-end: 6;
-	grid-row-start: 1;
-}
-
-.gallery_item:nth-child(2) {
-	margin-top: 160px;
-	grid-row-start: 1;
-	grid-column-start: 7;
-	grid-column-end: 13;
-}
-
-.gallery_item:nth-child(3) {
-	margin-top: -160px;
-	grid-row-start: 2;
-	grid-column-start: 1;
-	grid-column-end: 6;
-}
-
-.gallery_item:nth-child(4) {
-	margin-top: 160px;
-	grid-row-start: 2;
-	grid-column-start: 7;
-	grid-column-end: 12;
-}
-
-.gallery_item:nth-child(5) {
-	margin-top: -160px;
-	grid-row-start: 4;
-	grid-column-start: 1;
-	grid-column-end: 6;
-}
-
-.gallery_item:nth-child(6) {
-	margin-top: 160px;
-	grid-row-start: 4;
-	grid-column-start: 7;
-	grid-column-end: 13;
-}
-
-.gallery_item:nth-child(7) {
-	margin-top: -160px;
-	grid-row-start: 5;
-	grid-column-start: 1;
-	grid-column-end: 6;
 }
 
 .item_price {
@@ -3567,10 +3542,17 @@ h3 {
 	justify-content: center;
 }
 
-.gallery_item {
+.gallery .gallery_row {
+	flex-direction: column;
 	width: 100%;
 	margin-top: 0;
-	margin-bottom: 40px;
+	margin-bottom: 0;
+}
+
+.gallery_item {
+	width: 100%;
+	margin-top: 0 !important;
+	margin-bottom: 40px !important;
 }
 
 .gallery_item:nth-child(1),
@@ -3581,8 +3563,16 @@ h3 {
 .gallery_item:nth-child(6),
 .gallery_item:nth-child(7) {
 	display: block;
-	margin-top: 0 !important;
-	margin-bottom: 40px !important;
+}
+
+.gallery_item:nth-child(even),
+.gallery_item:nth-child(odd) {
+	width: 100%;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .gallery_item__inner__img {
@@ -3595,6 +3585,10 @@ h3 {
 	height: 100%;
 	-o-object-fit: cover;
 	object-fit: cover;
+}
+
+.gallery .small {
+	width: 100%;
 }
 
 .footer__inner {
